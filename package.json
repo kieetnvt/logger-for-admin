@@ -1,6 +1,6 @@
 {
   "name": "@kietnvt/logger-for-admin",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "type": "module",
   "exports": {
     ".": {
@@ -9,7 +9,7 @@
     }
   },
   "private": false,
-  "repository": "git@github.com:SoftwareBrothers/adminjs-logger.git",
+  "repository": "git@github.com:kieetnvt/logger-for-admin.git",
   "license": "MIT",
   "scripts": {
     "release": "semantic-release",

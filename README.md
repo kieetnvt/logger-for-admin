@@ -1,3 +1,7 @@
+## Update for fork repo
+
+Using field `email` to logged user email, who will be tracked. Not use `User` table, because the application don't have `User` table.
+
 # Logger Feature for AdminJS
 
 This is an official [AdminJS](https://github.com/SoftwareBrothers/adminjs) feature which logs changes to resources.
