@@ -120,6 +120,5 @@ dist
 # build files
 /build
 /lib
-/types
 example/.adminjs
 .nova
