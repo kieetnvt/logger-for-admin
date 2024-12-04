@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "declaration": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "baseUrl": "./",
+    "outDir": "lib",
+    "declarationDir": "types",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["test", "lib", "types", "node_modules"]
+}
