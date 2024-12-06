@@ -2,6 +2,49 @@
 
 Using field `email` to logged user email, who will be tracked. Not use `User` table, because the application don't have `User` table.
 
+#### Want to logging for specific resource:
+
+Add Log feature into resource definition:  using email of user's logged in to AdminJS
+
+```
+features: [
+    loggerFeature({
+      componentLoader,
+      propertiesMapping: {
+        email: 'email',
+      },
+      userIdAttribute: 'email',
+    }),
+  ],
+```
+
+And define the Log resource: `src/adminCMS/resources/log.resource.ts` using email of user's logged in to AdminJS
+
+```
+import { createLoggerResource } from '@kietnvt/logger-for-admin';
+import { LogModel } from '../../schemas/log.schema.js';
+import { componentLoader } from '../components/index.js';
+
+const config = {
+  resource: LogModel,
+  componentLoader,
+  featureOptions: {
+    componentLoader,
+    propertiesMapping: {
+      recordTitle: 'title',
+      userIdAttribute: 'email',
+      resourceOptions: {
+        navigation: {
+          name: 'Log',
+        },
+      },
+    },
+  },
+};
+
+export default createLoggerResource(config);
+```
+
 # Logger Feature for AdminJS
 
 This is an official [AdminJS](https://github.com/SoftwareBrothers/adminjs) feature which logs changes to resources.
